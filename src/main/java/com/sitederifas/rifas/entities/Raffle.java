@@ -112,7 +112,7 @@ public class Raffle implements Serializable{
 	public void setImgUrl(String imgUrl) {
 		this.imgUrl = imgUrl;
 	}
-	
+
 	public RaffleStatus getRaffleStatus() {
 		return RaffleStatus.valueOf(raffleStatus);
 	}

@@ -62,9 +62,4 @@ public class RaffleService {
 		entity.setPrice(obj.getPrice());
 		entity.setImgUrl(obj.getImgUrl());
 	}
-
-	public Raffle save(Raffle raffle) {
-		return repository.save(raffle);
-		
-	}
 }

@@ -37,7 +37,7 @@ public class OrderItem implements Serializable {
 	public OrderItem() {
 	}
 
-	public OrderItem(Order order, Raffle raffle, Integer quantity, Double price) {
+	public OrderItem(Order order, Raffle raffle, Integer quantity,  Double price) {
 		super();
 		id.setOrder(order);
 		id.setRaffle(raffle);

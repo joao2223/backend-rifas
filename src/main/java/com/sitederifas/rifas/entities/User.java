@@ -24,6 +24,7 @@ public class User implements Serializable {
 	private Long id;
 	private String name;
 	private String phone;
+	private String file;
 	
 	@JsonIgnore
 	@OneToMany(mappedBy = "client")
@@ -32,10 +33,11 @@ public class User implements Serializable {
 	public User() {
 	}
 
-	public User(Long id, String name, String phone) {
+	public User(Long id, String name, String phone, String file) {
 		this.id = id;
 		this.name = name;
 		this.phone = phone;
+		this.file = file;
 	}
 
 	public Long getId() {
@@ -60,6 +62,15 @@ public class User implements Serializable {
 
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+	
+
+	public String getFile() {
+		return file;
+	}
+
+	public void setFile(String file) {
+		this.file = file;
 	}
 
 	public List<Order> getOrders() {

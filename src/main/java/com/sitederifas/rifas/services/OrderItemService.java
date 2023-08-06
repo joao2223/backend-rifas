@@ -27,7 +27,7 @@ public class OrderItemService {
 	public OrderItem insert(OrderItem obj) {
 		return repository.save(obj);
 	}
-	
+
 	public OrderItem updateQuantity(Long itemId, Integer newQuantity) {
         OrderItem item = repository.findById(itemId).orElseThrow(() -> new RuntimeException("OrderItem not found"));
 
@@ -36,11 +36,11 @@ public class OrderItemService {
 
         return repository.save(item);
     }
-	
+
 	 public OrderItem save(OrderItem orderItem) {
 	        return repository.save(orderItem);
 	    }
-	 
+
 	 public OrderItem createOrderItem(OrderItem orderItem) {
 	        // Adicione as lógicas necessárias, como validações, antes de salvar
 	        return repository.save(orderItem);

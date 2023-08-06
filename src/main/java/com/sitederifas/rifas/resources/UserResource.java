@@ -1,5 +1,5 @@
 package com.sitederifas.rifas.resources;
-import org.springframework.web.bind.annotation.CrossOrigin;
+
 import java.net.URI;
 import java.util.List;
 
@@ -20,7 +20,6 @@ import com.sitederifas.rifas.services.UserService;
 
 @RestController
 @RequestMapping(value = "/users")
-@CrossOrigin(origins = "*")
 public class UserResource {
 
 	@Autowired
